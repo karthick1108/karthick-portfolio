@@ -24,7 +24,7 @@
               <span class="text-h6 font-weight-bold">{{ job.role }}</span>
             </div>
             <div :class="`text-body-2 text-${job.color} mb-2`">{{ job.company }}</div>
-            <p class="text-body-2 text-medium-emphasis mb-3" style="text-align: justify">
+            <p class="text-body-2 text-medium-emphasis mb-3">
               {{ job.description }}
             </p>
             <div class="d-flex flex-wrap ga-2">
