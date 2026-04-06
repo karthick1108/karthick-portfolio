@@ -25,6 +25,23 @@
         >
           Contact
         </a>
+
+        <v-divider vertical class="mx-1" />
+
+        <a
+          href="https://github.com/karthick1108"
+          target="_blank"
+          class="text-medium-emphasis text-decoration-none"
+        >
+          <i class="fa-brands fa-github" style="font-size: 18px" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/karthick-rajasekaran/"
+          target="_blank"
+          class="text-medium-emphasis text-decoration-none"
+        >
+          <i class="fa-brands fa-linkedin" style="font-size: 18px" />
+        </a>
       </div>
 
       <!-- Mobile hamburger -->
@@ -34,6 +51,7 @@
     </template>
   </v-app-bar>
 
+  <!-- Mobile drawer -->
   <!-- Mobile drawer -->
   <v-navigation-drawer v-model="drawer" location="right" temporary>
     <v-list>
@@ -57,6 +75,23 @@
           }
         "
       />
+
+      <v-divider class="my-2" />
+
+      <v-list-item title="GitHub" href="https://github.com/karthick1108" target="_blank">
+        <template v-slot:prepend>
+          <i class="fa-brands fa-github mr-3" style="font-size: 18px" />
+        </template>
+      </v-list-item>
+      <v-list-item
+        title="LinkedIn"
+        href="https://www.linkedin.com/in/karthick-rajasekaran/"
+        target="_blank"
+      >
+        <template v-slot:prepend>
+          <i class="fa-brands fa-linkedin mr-3" style="font-size: 18px" />
+        </template>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 

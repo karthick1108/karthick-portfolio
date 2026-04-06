@@ -10,6 +10,12 @@
       <v-divider />
       <EducationSection />
     </v-main>
+
+    <v-footer border="t" class="d-flex justify-center py-4">
+      <span class="text-caption text-medium-emphasis">
+        Designed & built by Karthick Rajasekaran © {{ new Date().getFullYear() }}
+      </span>
+    </v-footer>
   </v-app>
 </template>
 

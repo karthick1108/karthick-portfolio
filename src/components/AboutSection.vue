@@ -14,9 +14,7 @@
           </p>
           <p class="text-body-1 text-medium-emphasis" style="text-align: justify">
             When I'm not coding, you'll probably find me watching cricket or tennis, exploring a new
-            cafe ☕ or hunting down the best pastry in town 🍰. Feel free to connect with me on
-            <a href="https://www.linkedin.com/in/karthick-rajasekaran/" target="_blank">LinkedIn</a
-            >, always happy to have a chat! And ask me about cricket anytime 🏏
+            cafe ☕ or hunting down the best pastry in town 🍰. Ask me about cricket anytime 🏏
           </p>
         </v-col>
       </v-row>
