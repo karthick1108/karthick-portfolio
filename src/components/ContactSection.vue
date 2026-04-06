@@ -8,11 +8,11 @@
         <v-form ref="formRef">
           <v-text-field
             v-model="form.name"
-            label="Name"
+            label="Name *"
             variant="outlined"
             density="compact"
             class="mb-3"
-            hide-details
+            :rules="[(v) => !!v || 'Please enter your name']"
           />
           <v-text-field
             v-model="form.email"
@@ -21,7 +21,7 @@
             density="compact"
             class="mb-3"
             :rules="[
-              (v) => !!v || 'Email is required',
+              (v) => !!v || 'Please enter your email',
               (v) => /.+@.+\..+/.test(v) || 'Email must be valid',
             ]"
           />
@@ -31,7 +31,7 @@
             variant="outlined"
             density="compact"
             rows="4"
-            :rules="[(v) => !!v || 'Message is required']"
+            :rules="[(v) => !!v || 'Please enter your message']"
           />
         </v-form>
       </v-card-text>
