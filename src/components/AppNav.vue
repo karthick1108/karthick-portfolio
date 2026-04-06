@@ -92,6 +92,14 @@
           <i class="fa-brands fa-linkedin mr-3" style="font-size: 18px" />
         </template>
       </v-list-item>
+
+      <v-divider class="my-2" />
+
+      <v-list-item title="Resume" href="/resume.pdf" target="_blank">
+        <template v-slot:prepend>
+          <i class="fa-solid fa-download mr-3" style="font-size: 18px" />
+        </template>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 
