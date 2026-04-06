@@ -5,7 +5,8 @@
     </v-app-bar-title>
 
     <template v-slot:append>
-      <div class="d-flex ga-4 pr-4">
+      <!-- Desktop links -->
+      <div class="d-none d-md-flex ga-4 pr-4">
         <a
           v-for="link in links"
           :key="link.id"
@@ -25,8 +26,39 @@
           Contact
         </a>
       </div>
+
+      <!-- Mobile hamburger -->
+      <v-btn icon class="d-md-none mr-2" @click="drawer = !drawer">
+        <i :class="drawer ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'" />
+      </v-btn>
     </template>
   </v-app-bar>
+
+  <!-- Mobile drawer -->
+  <v-navigation-drawer v-model="drawer" location="right" temporary>
+    <v-list>
+      <v-list-item
+        v-for="link in links"
+        :key="link.id"
+        :title="link.label"
+        @click="
+          () => {
+            scrollTo(link.id)
+            drawer = false
+          }
+        "
+      />
+      <v-list-item
+        title="Contact"
+        @click="
+          () => {
+            contactOpen = true
+            drawer = false
+          }
+        "
+      />
+    </v-list>
+  </v-navigation-drawer>
 
   <ContactSection v-model="contactOpen" />
 </template>
@@ -36,6 +68,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import ContactSection from '@/components/ContactSection.vue'
 
 const contactOpen = ref(false)
+const drawer = ref(false)
 const active = ref('about')
 
 const links = [
@@ -56,7 +89,6 @@ const onScroll = () => {
     active.value = 'education'
     return
   }
-
   for (const link of [...links].reverse()) {
     const el = document.getElementById(link.id)
     if (el && el.getBoundingClientRect().top <= 100) {
