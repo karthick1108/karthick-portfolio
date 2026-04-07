@@ -22,7 +22,7 @@
           <p class="text-body-1 text-medium-emphasis" style="text-align: justify">
             Feel free to connect on LinkedIn or drop a message through the contact form, always
             happy to have a chat. Fair warning though, I only function properly after my morning
-            mocha ☕
+            mocha ☕.
           </p>
         </v-col>
       </v-row>
