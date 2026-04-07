@@ -1,7 +1,6 @@
 <template>
   <section id="experience" class="py-16">
     <v-container style="max-width: 900px">
-      <p class="text-overline text-teal mb-1">03 / experience</p>
       <h2 class="text-h4 font-weight-bold mb-10">Work history</h2>
 
       <v-timeline align="start">
