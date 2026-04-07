@@ -34,7 +34,7 @@ export const experience: Job[] = [
     company: 'The Spec Sheet',
     location: 'Sydney',
     period: 'May 2022 – Aug 2022',
-    color: 'purple',
+    color: '#8a63db',
     description:
       'Worked on a platform that centralises advertising specifications for agencies, creatives and media owners. Contributed to UI/UX development using React and TypeScript, helping streamline how ad specs are managed and shared across teams.',
     technologies: ['React', 'TypeScript', 'MobX', 'react-query', 'Playwright'],
@@ -54,7 +54,7 @@ export const experience: Job[] = [
     company: 'Tata Consultancy Services',
     location: 'Chennai',
     period: 'Oct 2015 – Aug 2018',
-    color: 'orange',
+    color: '#d4be66',
     description:
       'Provided production support for large-scale enterprise web applications, ensuring system stability and performance. Conducted root-cause analysis for incidents, performed database maintenance and mentored junior associates.',
     technologies: ['C#', 'ASP.NET', 'SQL Server', 'Dynatrace', 'Splunk'],

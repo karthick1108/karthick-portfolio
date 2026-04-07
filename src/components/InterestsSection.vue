@@ -20,7 +20,7 @@ const interests = [
   { emoji: '🏏', label: 'Cricket' },
   { emoji: '📺', label: 'Crime & Thriller' },
   { emoji: '🎮', label: 'Call of Duty' },
-  { emoji: '☕', label: 'Mocha' },
+  { emoji: '☕', label: 'Almond mocha' },
   { emoji: '🍰', label: 'Pastries' },
   { emoji: '🍽️', label: 'Cafe Hopping' },
   { emoji: '🐈', label: 'Cats' },
