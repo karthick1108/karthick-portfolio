@@ -4,12 +4,19 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
-        "source": "/resume.pdf",
-        "destination": "/resume.pdf"
-      },
-      {
-        "source": "**",
+        "source": "!/resume.pdf",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/resume.pdf",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/pdf"
+          }
+        ]
       }
     ]
   }
