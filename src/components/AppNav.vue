@@ -42,6 +42,18 @@
         >
           <i class="fa-brands fa-linkedin" style="font-size: 18px" />
         </a>
+        <v-tooltip text="Download Resume" location="bottom">
+          <template v-slot:activator="{ props }">
+            <a
+              v-bind="props"
+              href="/resume.pdf"
+              target="_blank"
+              class="text-medium-emphasis text-decoration-none"
+            >
+              <i class="fa-solid fa-download" style="font-size: 18px" />
+            </a>
+          </template>
+        </v-tooltip>
       </div>
 
       <!-- Mobile hamburger -->
@@ -51,7 +63,6 @@
     </template>
   </v-app-bar>
 
-  <!-- Mobile drawer -->
   <!-- Mobile drawer -->
   <v-navigation-drawer v-model="drawer" location="right" temporary>
     <v-list>

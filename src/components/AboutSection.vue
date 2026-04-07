@@ -7,42 +7,22 @@
         <v-col cols="12">
           <p class="text-body-1 text-medium-emphasis mb-4" style="text-align: justify">
             Hey, I'm Karthick. A Software Developer originally from Chennai, now calling Brisbane
-            home since 2021. I started my career at TCS in Chennai, moved to Melbourne for my
-            Masters, then worked my way through startups and scale-ups in Sydney and Brisbane. Each
-            stop taught me something different about building software that lasts. Right now I'm at
-            Nukon in Brisbane working as a Software Developer.
+            home since 2021. Over the years I've worked across 4 companies and 2 countries, picking
+            up experience building web applications from the ground up, maintaining legacy systems
+            and everything in between. Right now I'm at Nukon in Brisbane working as a Software
+            Developer.
+          </p>
+          <p class="text-body-1 text-medium-emphasis mb-4" style="text-align: justify">
+            I enjoy working across the full stack, whether it's crafting clean UIs, designing robust
+            backend APIs, or figuring out cloud infrastructure. I care about writing code that's
+            maintainable, scalable and actually works well in production.
           </p>
           <p class="text-body-1 text-medium-emphasis" style="text-align: justify">
             When I'm not coding, you'll probably find me watching cricket or tennis, exploring a new
-            cafe ☕ or hunting down the best pastry in town 🍰. Ask me about cricket anytime 🏏
+            cafe ☕ or hunting down the best pastry in town 🍰. Feel free to connect with me on
+            LinkedIn or drop a message through the contact form, always happy to have a chat! And
+            ask me about cricket anytime 🏏
           </p>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <v-col cols="12" sm="3">
-          <v-card variant="outlined" rounded="lg" class="text-center pa-4">
-            <p class="text-h4 font-weight-bold text-teal">5</p>
-            <p class="text-caption text-uppercase text-medium-emphasis">Years in Australia</p>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="3">
-          <v-card variant="outlined" rounded="lg" class="text-center pa-4">
-            <p class="text-h4 font-weight-bold text-teal">3</p>
-            <p class="text-caption text-uppercase text-medium-emphasis">Years in India</p>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="3">
-          <v-card variant="outlined" rounded="lg" class="text-center pa-4">
-            <p class="text-h4 font-weight-bold text-teal">4</p>
-            <p class="text-caption text-uppercase text-medium-emphasis">Companies</p>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="3">
-          <v-card variant="outlined" rounded="lg" class="text-center pa-4">
-            <p class="text-h4 font-weight-bold text-teal">15+</p>
-            <p class="text-caption text-uppercase text-medium-emphasis">Technologies</p>
-          </v-card>
         </v-col>
       </v-row>
     </v-container>
