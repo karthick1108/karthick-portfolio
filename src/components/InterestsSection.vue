@@ -20,10 +20,10 @@ const interests = [
   { emoji: '🏏', label: 'Cricket' },
   { emoji: '📺', label: 'Crime & Thriller' },
   { emoji: '🎮', label: 'Call of Duty' },
-  { emoji: '☕', label: 'Coffee' },
+  { emoji: '☕', label: 'Mocha' },
   { emoji: '🍰', label: 'Pastries' },
   { emoji: '🍽️', label: 'Cafe Hopping' },
-  { emoji: '🐾', label: 'Pets' },
-  { emoji: '🎵', label: 'Music' }
+  { emoji: '🐈', label: 'Cats' },
+  { emoji: '🎵', label: 'EDM, Rock & Pop' },
 ]
 </script>

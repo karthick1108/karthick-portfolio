@@ -4,13 +4,13 @@
     <v-main>
       <AboutSection />
       <v-divider />
-      <InterestsSection />
-      <v-divider />
       <SkillsSection />
       <v-divider />
       <ExperienceSection />
       <v-divider />
       <EducationSection />
+      <v-divider />
+      <InterestsSection />
     </v-main>
 
     <v-footer border="t" class="d-flex justify-center py-4">
