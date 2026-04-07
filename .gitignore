@@ -40,3 +40,7 @@ __screenshots__/
 
 # firebase
 .firebase/
+
+public/
+resume.pdf
+favicon.ico
