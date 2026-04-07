@@ -44,7 +44,7 @@ export const experience: Job[] = [
     company: 'Enablo',
     location: 'Brisbane',
     period: 'Nov 2020 – May 2022',
-    color: 'blue',
+    color: '#2196F3',
     description:
       'Developed custom integrations and automations for Workplace from Meta, helping businesses streamline internal communications. Built full-stack features, maintained CI/CD pipelines and managed cloud infrastructure on AWS and Azure.',
     technologies: ['Node.js', 'React', 'Sequelize', 'Docker', 'GitLab CI', 'Terraform', 'AWS'],

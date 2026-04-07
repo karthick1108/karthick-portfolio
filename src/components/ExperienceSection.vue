@@ -1,6 +1,7 @@
 <template>
   <section id="experience" class="py-16">
     <v-container style="max-width: 900px">
+      <p class="text-overline text-teal mb-1">03 / experience</p>
       <h2 class="text-h4 font-weight-bold mb-10">Work history</h2>
 
       <v-timeline align="start">
@@ -11,7 +12,7 @@
           size="small"
         >
           <template v-slot:opposite>
-            <div :class="`font-weight-bold text-${job.color}`">
+            <div class="font-weight-bold" :style="`color: ${job.color}`">
               {{ job.period }}
             </div>
             <div class="text-caption text-medium-emphasis mt-1">
@@ -23,7 +24,7 @@
             <div class="d-flex align-center ga-2 mb-1">
               <span class="text-h6 font-weight-bold">{{ job.role }}</span>
             </div>
-            <div :class="`text-body-2 text-${job.color} mb-2`">{{ job.company }}</div>
+            <div class="text-body-2 mb-2" :style="`color: ${job.color}`">{{ job.company }}</div>
             <p class="text-body-2 text-medium-emphasis mb-3">
               {{ job.description }}
             </p>
