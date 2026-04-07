@@ -16,7 +16,7 @@
             I enjoy working across the full stack, whether it's crafting clean UIs, designing robust
             backend APIs, or figuring out cloud infrastructure. I care about writing code that's
             maintainable, scalable and actually works well in production. This portfolio was built
-            using Vue 3 and Vuetify 4, and deployed on Firebase — a small reflection of the
+            using Vue 3 and Vuetify 4, and deployed on Firebase - a small reflection of the
             technologies I work with day to day.
           </p>
           <p class="text-body-1 text-medium-emphasis" style="text-align: justify">
