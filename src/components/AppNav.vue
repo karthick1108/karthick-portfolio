@@ -141,7 +141,7 @@ const scrollTo = (id: string) => {
 const onScroll = () => {
   const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 50
   if (isAtBottom) {
-    active.value = 'education'
+    active.value = 'interests'
     return
   }
   for (const link of [...links].reverse()) {
