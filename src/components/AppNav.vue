@@ -127,6 +127,7 @@ const active = ref('about')
 
 const links = [
   { id: 'about', label: 'About' },
+  { id: 'interests', label: 'Interests' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },

@@ -18,10 +18,8 @@
             maintainable, scalable and actually works well in production.
           </p>
           <p class="text-body-1 text-medium-emphasis" style="text-align: justify">
-            When I'm not coding, you'll probably find me watching cricket or tennis, exploring a new
-            cafe ☕ or hunting down the best pastry in town 🍰. Feel free to connect with me on
-            LinkedIn or drop a message through the contact form, always happy to have a chat! And
-            ask me about cricket anytime 🏏
+            Feel free to connect on LinkedIn or drop a message through the contact form, always
+            happy to have a chat.
           </p>
         </v-col>
       </v-row>

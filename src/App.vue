@@ -4,6 +4,8 @@
     <v-main>
       <AboutSection />
       <v-divider />
+      <InterestsSection />
+      <v-divider />
       <SkillsSection />
       <v-divider />
       <ExperienceSection />
@@ -25,4 +27,5 @@ import AboutSection from '@/components/AboutSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
+import InterestsSection from '@/components/InterestsSection.vue'
 </script>
