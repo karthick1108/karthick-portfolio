@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <AppNav />
+  <v-app :theme="theme">
+    <AppNav :theme="theme" @toggle-theme="toggleTheme" />
     <v-main>
       <AboutSection />
       <v-divider />
@@ -28,4 +28,11 @@ import SkillsSection from '@/components/SkillsSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import InterestsSection from '@/components/InterestsSection.vue'
+
+import { ref } from 'vue'
+
+const theme = ref('dark')
+const toggleTheme = () => {
+  theme.value = theme.value === 'dark' ? 'light' : 'dark'
+}
 </script>

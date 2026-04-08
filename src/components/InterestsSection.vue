@@ -24,6 +24,6 @@ const interests = [
   { emoji: '🍰', label: 'Pastries' },
   { emoji: '🍽️', label: 'Cafe Hopping' },
   { emoji: '🐈', label: 'Cats' },
-  { emoji: '🎵', label: 'EDM, Rock & Pop' },
+  { emoji: '🎵', label: 'EDM/Rock/Pop' },
 ]
 </script>

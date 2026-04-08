@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar flat density="compact" style="border-bottom: 1px solid rgba(255, 255, 255, 0.08)">
+  <v-app-bar flat density="compact" border="b">
     <v-app-bar-title style="cursor: pointer" @click="scrollTo('about')">
       <span class="font-weight-bold">KR<span class="text-teal">.</span></span>
     </v-app-bar-title>
@@ -11,7 +11,13 @@
           v-for="link in links"
           :key="link.id"
           :href="`#${link.id}`"
-          :class="active === link.id ? 'text-white' : 'text-medium-emphasis'"
+          :class="
+            active === link.id
+              ? theme === 'dark'
+                ? 'text-white'
+                : 'text-black'
+              : 'text-medium-emphasis'
+          "
           class="text-caption text-uppercase text-decoration-none"
           style="letter-spacing: 0.1em; transition: color 0.2s"
           @click.prevent="() => scrollTo(link.id)"
@@ -54,6 +60,16 @@
             </a>
           </template>
         </v-tooltip>
+        <a
+          class="text-medium-emphasis text-decoration-none"
+          style="cursor: pointer"
+          @click="emit('toggleTheme')"
+        >
+          <i
+            :class="theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"
+            style="font-size: 18px"
+          />
+        </a>
       </div>
 
       <!-- Mobile hamburger -->
@@ -111,6 +127,25 @@
           <i class="fa-solid fa-download mr-3" style="font-size: 18px" />
         </template>
       </v-list-item>
+
+      <v-divider class="my-2" />
+
+      <v-list-item
+        :title="theme === 'dark' ? 'Light' : 'Dark'"
+        @click="
+          () => {
+            emit('toggleTheme')
+            drawer = false
+          }
+        "
+      >
+        <template v-slot:prepend>
+          <i
+            :class="theme === 'dark' ? 'fa-solid fa-sun mr-3' : 'fa-solid fa-moon mr-3'"
+            style="font-size: 18px"
+          />
+        </template>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 
@@ -124,13 +159,15 @@ import ContactSection from '@/components/ContactSection.vue'
 const contactOpen = ref(false)
 const drawer = ref(false)
 const active = ref('about')
+const { theme } = defineProps<{ theme: string }>()
+const emit = defineEmits<{ toggleTheme: [] }>()
 
 const links = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
-  { id: 'interests', label: 'Interests' }
+  { id: 'interests', label: 'Interests' },
 ]
 
 const scrollTo = (id: string) => {

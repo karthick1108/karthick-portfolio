@@ -12,6 +12,9 @@
                 <p class="text-body-1 font-weight-bold mb-1">{{ edu.degree }}</p>
                 <p class="text-body-2 text-teal mb-1">{{ edu.school }} · {{ edu.location }}</p>
                 <p class="text-caption text-medium-emphasis">{{ edu.years }}</p>
+                <p class="text-body-2 text-medium-emphasis" style="text-align: justify">
+                  {{ edu.description }}
+                </p>
               </div>
             </v-card-text>
           </v-card>
