@@ -20,6 +20,7 @@ export const experience: Job[] = [
     technologies: [
       'Vue.js',
       'Vuetify',
+      'Angular',
       'TypeScript',
       'Spring Boot',
       'SQL Server',
