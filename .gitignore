@@ -44,3 +44,5 @@ __screenshots__/
 public/
 resume.pdf
 favicon.ico
+
+.env

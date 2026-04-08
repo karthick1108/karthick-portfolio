@@ -96,7 +96,7 @@ const submit = async () => {
   sending.value = true
   error.value = false
   try {
-    const res = await fetch('https://formspree.io/f/xnjooljy', {
+    const res = await fetch(import.meta.env.VITE_FORMSPREE_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form.value),
