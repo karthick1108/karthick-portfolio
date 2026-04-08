@@ -22,6 +22,7 @@ export const experience: Job[] = [
       'Vuetify',
       'TypeScript',
       'Spring Boot',
+      'SQL Server',
       'jHipster',
       'Liquibase',
       'Camunda',
@@ -47,7 +48,7 @@ export const experience: Job[] = [
     color: '#2196F3',
     description:
       'Developed custom integrations and automations for Workplace from Meta, helping businesses streamline internal communications. Built full-stack features, maintained CI/CD pipelines and managed cloud infrastructure on AWS and Azure.',
-    technologies: ['Node.js', 'React', 'Sequelize', 'Docker', 'GitLab CI', 'Terraform', 'AWS'],
+    technologies: ['Node.js','Express.js', 'React', 'Sequelize', 'Docker', 'Terraform', 'CloudFormation'],
   },
   {
     role: 'Systems Engineer',
