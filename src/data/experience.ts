@@ -59,6 +59,6 @@ export const experience: Job[] = [
     color: '#d4be66',
     description:
       'Provided production support for large-scale enterprise web applications, ensuring system stability and performance. Conducted root-cause analysis for incidents, performed database maintenance and mentored junior associates.',
-    technologies: ['C#', 'ASP.NET', 'SQL Server', 'Dynatrace', 'Splunk'],
+    technologies: ['C#', 'ASP.NET', 'SQL Server', 'Splunk'],
   },
 ]

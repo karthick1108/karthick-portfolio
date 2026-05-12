@@ -69,7 +69,6 @@ export const skills: SkillGroup[] = [
       { name: 'Datadog', icon: 'devicon-datadog-plain colored' },
       { name: 'Grafana', icon: 'devicon-grafana-plain colored' },
       { name: 'Ignition', icon: 'fa-solid fa-fire' },
-      { name: 'Dynatrace', icon: 'devicon-dynatrace-plain colored' },
       { name: 'Splunk', icon: 'devicon-splunk-original-wordmark colored' },
     ],
   },
