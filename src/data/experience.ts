@@ -49,7 +49,15 @@ export const experience: Job[] = [
     color: '#2196F3',
     description:
       'Developed custom integrations and automations for Workplace from Meta, helping businesses streamline internal communications. Built full-stack features, maintained CI/CD pipelines and managed cloud infrastructure on AWS and Azure.',
-    technologies: ['Node.js','Express.js', 'React', 'Sequelize', 'Docker', 'Terraform', 'CloudFormation'],
+    technologies: [
+      'Node.js',
+      'Express.js',
+      'React',
+      'Sequelize',
+      'Docker',
+      'Terraform',
+      'CloudFormation',
+    ],
   },
   {
     role: 'Systems Engineer',
