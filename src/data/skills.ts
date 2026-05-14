@@ -67,7 +67,6 @@ export const skills: SkillGroup[] = [
     category: 'Monitoring & Viz',
     items: [
       { name: 'Datadog', icon: 'devicon-datadog-plain colored' },
-      { name: 'Grafana', icon: 'devicon-grafana-plain colored' },
       { name: 'Ignition', icon: 'fa-solid fa-fire' },
       { name: 'Splunk', icon: 'devicon-splunk-original-wordmark colored' },
     ],
