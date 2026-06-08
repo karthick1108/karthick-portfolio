@@ -1,7 +1,7 @@
 <template>
-  <section id="interests" class="py-16">
+  <section id="interests" class="py-12">
     <v-container style="max-width: 900px">
-      <h2 v-reveal class="text-h4 font-weight-bold mb-10">Personal interests</h2>
+      <h2 v-reveal class="text-h4 font-weight-bold mb-6">Personal interests</h2>
 
       <v-row>
         <v-col v-for="interest in interests" :key="interest.label" cols="6" sm="3">

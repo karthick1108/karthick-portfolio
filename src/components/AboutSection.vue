@@ -1,7 +1,7 @@
 <template>
-  <section id="about" class="py-16">
+  <section id="about" class="py-12">
     <v-container style="max-width: 900px">
-      <h2 v-reveal class="text-h4 font-weight-bold mb-10">A bit about myself</h2>
+      <h2 v-reveal class="text-h4 font-weight-bold mb-6">A bit about myself</h2>
 
       <v-row class="mb-6">
         <v-col v-reveal cols="12">

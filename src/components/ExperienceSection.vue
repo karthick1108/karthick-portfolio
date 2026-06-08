@@ -1,7 +1,7 @@
 <template>
-  <section id="experience" class="py-16">
+  <section id="experience" class="py-12">
     <v-container style="max-width: 900px">
-      <h2 v-reveal class="text-h4 font-weight-bold mb-10">Work history</h2>
+      <h2 v-reveal class="text-h4 font-weight-bold mb-6">Work history</h2>
 
       <v-timeline v-reveal align="start">
         <v-timeline-item
