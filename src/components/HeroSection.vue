@@ -1,8 +1,8 @@
 <template>
   <section id="home" class="hero d-flex align-center">
-    <v-container style="max-width: 1100px">
+    <v-container style="max-width: 900px">
       <v-row align="center" class="flex-column-reverse flex-md-row">
-        <v-col cols="12" md="7">
+        <v-col cols="12" md="8">
           <p v-reveal class="text-overline text-teal mb-2">Software Developer · Brisbane</p>
 
           <h1 v-reveal class="hero-title font-weight-bold mb-5">
@@ -26,7 +26,7 @@
           </div>
         </v-col>
 
-        <v-col cols="12" md="5" class="text-center mb-8 mb-md-0">
+        <v-col cols="12" md="4" class="text-center mb-8 mb-md-0">
           <v-avatar v-reveal size="260" class="hero-avatar">
             <v-img
               src="https://res.cloudinary.com/dmswxxfu4/image/upload/v1598949476/images/karthick_igr2vq.png"
@@ -55,7 +55,7 @@ const scrollTo = (id: string) => {
 }
 
 .hero-title {
-  font-size: clamp(2.75rem, 7vw, 4.5rem);
+  font-size: clamp(2.25rem, 6vw, 4rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
