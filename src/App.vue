@@ -22,6 +22,7 @@
     </v-footer>
 
     <ContactSection v-model="contactOpen" />
+    <BackToTop />
   </v-app>
 </template>
 
@@ -34,6 +35,7 @@ import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
 import InterestsSection from '@/components/InterestsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
+import BackToTop from '@/components/BackToTop.vue'
 
 import { ref, provide, watch } from 'vue'
 
