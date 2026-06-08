@@ -1,9 +1,9 @@
 <template>
   <section id="experience" class="py-16">
     <v-container style="max-width: 900px">
-      <h2 class="text-h4 font-weight-bold mb-10">Work history</h2>
+      <h2 v-reveal class="text-h4 font-weight-bold mb-10">Work history</h2>
 
-      <v-timeline align="start">
+      <v-timeline v-reveal align="start">
         <v-timeline-item
           v-for="job in experience"
           :key="job.company"

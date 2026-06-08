@@ -1,6 +1,6 @@
 <template>
   <v-app-bar flat density="compact" border="b">
-    <v-app-bar-title style="cursor: pointer" @click="scrollTo('about')">
+    <v-app-bar-title style="cursor: pointer" @click="scrollTo('home')">
       <span class="font-weight-bold">KR<span class="text-teal">.</span></span>
     </v-app-bar-title>
 
@@ -24,14 +24,6 @@
         >
           {{ link.label }}
         </a>
-        <a
-          class="text-caption text-uppercase text-decoration-none text-medium-emphasis"
-          style="letter-spacing: 0.1em; transition: color 0.2s; cursor: pointer"
-          @click="contactOpen = true"
-        >
-          Contact
-        </a>
-
         <v-divider vertical class="mx-1" />
 
         <a
@@ -93,16 +85,6 @@
           }
         "
       />
-      <v-list-item
-        title="Contact"
-        @click="
-          () => {
-            contactOpen = true
-            drawer = false
-          }
-        "
-      />
-
       <v-divider class="my-2" />
 
       <v-list-item title="GitHub" href="https://github.com/karthick1108" target="_blank">
@@ -149,16 +131,13 @@
     </v-list>
   </v-navigation-drawer>
 
-  <ContactSection v-model="contactOpen" />
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import ContactSection from '@/components/ContactSection.vue'
 
-const contactOpen = ref(false)
 const drawer = ref(false)
-const active = ref('about')
+const active = ref('home')
 const { theme } = defineProps<{ theme: string }>()
 const emit = defineEmits<{ toggleTheme: [] }>()
 
@@ -188,7 +167,7 @@ const onScroll = () => {
       return
     }
   }
-  active.value = 'about'
+  active.value = 'home'
 }
 
 onMounted(() => window.addEventListener('scroll', onScroll))

@@ -25,6 +25,7 @@ export const skills: SkillGroup[] = [
       { name: 'Vue.js', icon: 'devicon-vuejs-plain colored' },
       { name: 'React', icon: 'devicon-react-original colored' },
       { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
+      { name: 'Express.js', icon: 'devicon-express-original' },
       { name: 'Spring Boot', icon: 'devicon-spring-plain colored' },
       { name: 'Angular', icon: 'devicon-angularjs-plain colored' },
     ],
@@ -45,7 +46,7 @@ export const skills: SkillGroup[] = [
       { name: 'jHipster', icon: 'devicon-jhipster-plain colored' },
       { name: 'Liquibase', icon: 'devicon-liquibase-plain colored' },
       { name: 'Camunda', icon: 'fa-solid fa-diagram-project' },
-      { name: 'Cypress', icon: 'devicon-cypressio-plain colored' },
+      { name: 'Cypress', icon: 'devicon-cypressio-plain' },
       { name: 'Playwright', icon: 'devicon-playwright-plain colored' },
       { name: 'Jest', icon: 'devicon-jest-plain colored' },
     ],
@@ -68,7 +69,7 @@ export const skills: SkillGroup[] = [
     items: [
       { name: 'Datadog', icon: 'devicon-datadog-plain colored' },
       { name: 'Ignition', icon: 'fa-solid fa-fire' },
-      { name: 'Splunk', icon: 'devicon-splunk-original-wordmark colored' },
+      { name: 'Splunk', icon: 'devicon-splunk-original-wordmark' },
     ],
   },
 ]
