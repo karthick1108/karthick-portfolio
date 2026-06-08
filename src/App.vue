@@ -35,12 +35,13 @@ import EducationSection from '@/components/EducationSection.vue'
 import InterestsSection from '@/components/InterestsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 
-import { ref, provide } from 'vue'
+import { ref, provide, watch } from 'vue'
 
-const theme = ref('dark')
+const theme = ref(localStorage.getItem('theme') ?? 'dark')
 const toggleTheme = () => {
   theme.value = theme.value === 'dark' ? 'light' : 'dark'
 }
+watch(theme, (value) => localStorage.setItem('theme', value))
 
 const contactOpen = ref(false)
 provide('openContact', () => {
