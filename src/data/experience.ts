@@ -21,6 +21,7 @@ export const experience: Job[] = [
       'Vue.js',
       'Vuetify',
       'Angular',
+      'React',
       'TypeScript',
       'Spring Boot',
       'SQL Server',
