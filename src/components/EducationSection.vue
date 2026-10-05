@@ -7,14 +7,29 @@
         <v-col v-for="edu in education" :key="edu.degree" cols="12" sm="6">
           <v-card v-reveal variant="outlined" rounded="lg" height="100%">
             <v-card-text class="d-flex ga-4">
-              <v-icon :icon="edu.icon" size="32" color="teal" class="mt-1" />
+              <div
+                class="mt-1"
+                style="
+                  width: 32px;
+                  height: 32px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-shrink: 0;
+                "
+              >
+                <i
+                  v-if="edu.icon.includes('-')"
+                  :class="edu.icon"
+                  class="text-teal"
+                  style="font-size: 32px; line-height: 1"
+                />
+                <span v-else style="font-size: 26px; line-height: 1">{{ edu.icon }}</span>
+              </div>
               <div>
                 <p class="text-body-1 font-weight-bold mb-1">{{ edu.degree }}</p>
                 <p class="text-body-2 text-teal mb-1">{{ edu.school }} · {{ edu.location }}</p>
                 <p class="text-caption text-medium-emphasis">{{ edu.years }}</p>
-                <p class="text-body-2 text-medium-emphasis">
-                  {{ edu.description }}
-                </p>
               </div>
             </v-card-text>
           </v-card>

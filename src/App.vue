@@ -12,6 +12,8 @@
       <v-divider />
       <EducationSection />
       <v-divider />
+      <CertificationsSection />
+      <v-divider />
       <InterestsSection />
     </v-main>
 
@@ -33,6 +35,7 @@ import AboutSection from '@/components/AboutSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'
 import EducationSection from '@/components/EducationSection.vue'
+import CertificationsSection from '@/components/CertificationsSection.vue'
 import InterestsSection from '@/components/InterestsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import BackToTop from '@/components/BackToTop.vue'

@@ -146,6 +146,7 @@ const links = [
   { id: 'skills', label: 'Skills' },
   { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
+  { id: 'certifications', label: 'Certifications' },
   { id: 'interests', label: 'Interests' },
 ]
 
