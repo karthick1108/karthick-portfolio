@@ -19,7 +19,7 @@
             </div>
           </template>
 
-          <div class="pb-6">
+          <div class="pb-6 experience-item pa-3 rounded-lg">
             <div class="d-flex align-center ga-2 mb-1">
               <span class="text-h6 font-weight-bold">{{ job.role }}</span>
             </div>
@@ -34,6 +34,7 @@
                 size="small"
                 variant="outlined"
                 :color="job.color"
+                class="skill-chip"
               >
                 {{ tech }}
               </v-chip>
@@ -48,3 +49,24 @@
 <script setup lang="ts">
 import { experience } from '@/data/experience'
 </script>
+
+<style scoped>
+.experience-item {
+  margin-left: -12px;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease;
+}
+.experience-item:hover {
+  background-color: rgba(var(--v-theme-teal), 0.06);
+  transform: translateX(4px);
+}
+.skill-chip {
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+.skill-chip:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+</style>

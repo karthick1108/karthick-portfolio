@@ -5,8 +5,10 @@
 
       <v-row>
         <v-col v-for="interest in interests" :key="interest.label" cols="6" sm="3">
-          <v-card v-reveal variant="outlined" rounded="lg" class="text-center pa-4 interest-card">
-            <div style="font-size: 32px" class="mb-2">{{ interest.emoji }}</div>
+          <v-card v-reveal variant="outlined" rounded="lg" class="text-center pa-4 hover-card">
+            <div class="icon-badge icon-badge--round mx-auto mb-2" style="font-size: 26px">
+              {{ interest.emoji }}
+            </div>
             <p class="text-body-2 text-medium-emphasis mb-0">{{ interest.label }}</p>
           </v-card>
         </v-col>
@@ -14,18 +16,6 @@
     </v-container>
   </section>
 </template>
-
-<style scoped>
-.interest-card {
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
-}
-.interest-card:hover {
-  transform: translateY(-4px);
-  border-color: rgb(var(--v-theme-teal));
-}
-</style>
 
 <script setup lang="ts">
 const interests = [

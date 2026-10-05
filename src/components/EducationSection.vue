@@ -5,26 +5,16 @@
 
       <v-row>
         <v-col v-for="edu in education" :key="edu.degree" cols="12" sm="6">
-          <v-card v-reveal variant="outlined" rounded="lg" height="100%">
+          <v-card v-reveal variant="outlined" rounded="lg" height="100%" class="hover-card">
             <v-card-text class="d-flex ga-4">
-              <div
-                class="mt-1"
-                style="
-                  width: 32px;
-                  height: 32px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  flex-shrink: 0;
-                "
-              >
+              <div class="icon-badge mt-1">
                 <i
                   v-if="edu.icon.includes('-')"
                   :class="edu.icon"
                   class="text-teal"
-                  style="font-size: 32px; line-height: 1"
+                  style="font-size: 26px; line-height: 1"
                 />
-                <span v-else style="font-size: 26px; line-height: 1">{{ edu.icon }}</span>
+                <span v-else style="font-size: 22px; line-height: 1">{{ edu.icon }}</span>
               </div>
               <div>
                 <p class="text-body-1 font-weight-bold mb-1">{{ edu.degree }}</p>

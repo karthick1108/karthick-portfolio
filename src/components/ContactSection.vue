@@ -1,7 +1,10 @@
 <template>
   <v-dialog v-model="dialog" max-width="500" persistent>
     <v-card rounded="lg">
-      <v-card-title class="pt-5 px-6">Get in touch</v-card-title>
+      <v-card-title class="pt-5 px-6 d-flex align-center ga-2">
+        <v-icon icon="fa-solid fa-paper-plane" color="teal" size="20" />
+        Get in touch
+      </v-card-title>
       <v-card-subtitle class="px-6 pb-2">I'll get back to you as soon as possible.</v-card-subtitle>
 
       <v-card-text class="px-6">
@@ -12,6 +15,7 @@
             variant="outlined"
             density="compact"
             class="mb-3"
+            prepend-inner-icon="fa-solid fa-user"
             :rules="[(v) => !!v || 'Please enter your name']"
           />
           <v-text-field
@@ -20,6 +24,7 @@
             variant="outlined"
             density="compact"
             class="mb-3"
+            prepend-inner-icon="fa-solid fa-envelope"
             :rules="[
               (v) => !!v || 'Please enter your email',
               (v) => /.+@.+\..+/.test(v) || 'Email must be valid',
@@ -31,6 +36,7 @@
             variant="outlined"
             density="compact"
             rows="4"
+            prepend-inner-icon="fa-solid fa-message"
             :rules="[(v) => !!v || 'Please enter your message']"
           />
         </v-form>
@@ -48,7 +54,9 @@
       <v-card-actions class="px-6 pb-5">
         <v-spacer />
         <v-btn variant="text" @click="cancel">Cancel</v-btn>
-        <v-btn color="teal" variant="flat" :loading="sending" @click="submit">Submit</v-btn>
+        <v-btn color="teal" variant="flat" class="hero-btn-like" :loading="sending" @click="submit">
+          Submit
+        </v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -70,6 +78,18 @@
     </v-card>
   </v-dialog>
 </template>
+
+<style scoped>
+.hero-btn-like {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.hero-btn-like:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -8px rgba(var(--v-theme-teal), 0.5);
+}
+</style>
 
 <script setup lang="ts">
 import { ref } from 'vue'

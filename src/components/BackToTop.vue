@@ -32,5 +32,12 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   right: 24px;
   bottom: 24px;
   z-index: 100;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.back-to-top:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px -6px rgba(var(--v-theme-teal), 0.6);
 }
 </style>

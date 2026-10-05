@@ -5,6 +5,20 @@
 
       <v-row class="mb-6">
         <v-col v-reveal cols="12">
+          <div class="d-flex flex-wrap ga-2 mb-6">
+            <v-chip variant="tonal" color="teal" prepend-icon="fa-solid fa-briefcase">
+              4+ companies
+            </v-chip>
+            <v-chip variant="tonal" color="teal" prepend-icon="fa-solid fa-earth-asia">
+              2 countries
+            </v-chip>
+            <v-chip variant="tonal" color="teal" prepend-icon="fa-solid fa-code">
+              Full-stack
+            </v-chip>
+            <v-chip variant="tonal" color="teal" prepend-icon="fa-solid fa-location-dot">
+              Brisbane, AU
+            </v-chip>
+          </div>
           <p class="text-body-1 text-medium-emphasis mb-4">
             Hey, I'm Karthick and welcome to my portfolio. A Software Developer originally from
             Chennai, now calling Brisbane home since 2021. Over the years I've worked across 4

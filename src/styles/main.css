@@ -30,3 +30,35 @@ html {
     transition: none;
   }
 }
+
+/* Shared hover-lift card used across Skills/Education/Certifications */
+.hover-card {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.hover-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--v-theme-teal), 0.6);
+  box-shadow: 0 12px 24px -12px rgba(var(--v-theme-teal), 0.45);
+}
+
+/* Shared icon badge tile */
+.icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(var(--v-theme-teal), 0.12);
+  transition: background 0.25s ease;
+}
+.icon-badge--round {
+  border-radius: 50%;
+}
+.hover-card:hover .icon-badge {
+  background: rgba(var(--v-theme-teal), 0.22);
+}
