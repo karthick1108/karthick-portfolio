@@ -3,17 +3,17 @@
     <AppNav :theme="theme" @toggle-theme="toggleTheme" />
     <v-main>
       <HeroSection />
-      <v-divider />
+      <SectionDivider />
       <AboutSection />
-      <v-divider />
+      <SectionDivider />
       <SkillsSection />
-      <v-divider />
+      <SectionDivider />
       <ExperienceSection />
-      <v-divider />
+      <SectionDivider />
       <EducationSection />
-      <v-divider />
+      <SectionDivider />
       <CertificationsSection />
-      <v-divider />
+      <SectionDivider />
       <InterestsSection />
     </v-main>
 
@@ -31,6 +31,7 @@
 <script setup lang="ts">
 import AppNav from '@/components/AppNav.vue'
 import HeroSection from '@/components/HeroSection.vue'
+import SectionDivider from '@/components/SectionDivider.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ExperienceSection from '@/components/ExperienceSection.vue'

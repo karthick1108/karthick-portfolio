@@ -1,4 +1,5 @@
 <template>
+  <div class="scroll-progress" :style="{ width: scrollProgress + '%' }" />
   <v-app-bar flat density="compact" border="b">
     <v-app-bar-title style="cursor: pointer" @click="scrollTo('home')">
       <span class="font-weight-bold">KR<span class="text-teal">.</span></span>
@@ -151,6 +152,8 @@ const links = [
   { id: 'interests', label: 'Interests' },
 ]
 
+const scrollProgress = ref(0)
+
 let scrollLock = false
 
 const scrollTo = (id: string) => {
@@ -167,10 +170,12 @@ const unlockScrollSpy = () => {
 }
 
 const onScroll = () => {
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+  scrollProgress.value = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0
+
   if (scrollLock) return
   // When the page can't scroll any further, pin the last section as active —
   // it may be too short for its top to ever reach the 100px threshold below.
-  const maxScroll = document.documentElement.scrollHeight - window.innerHeight
   if (window.scrollY >= maxScroll - 2) {
     active.value = links.at(-1)!.id
     return
@@ -186,6 +191,7 @@ const onScroll = () => {
 }
 
 onMounted(() => {
+  onScroll()
   window.addEventListener('scroll', onScroll)
   window.addEventListener('wheel', unlockScrollSpy, { passive: true })
   window.addEventListener('touchmove', unlockScrollSpy, { passive: true })

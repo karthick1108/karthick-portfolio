@@ -62,3 +62,22 @@ html {
 .hover-card:hover .icon-badge {
   background: rgba(var(--v-theme-teal), 0.22);
 }
+
+/* Staggered entrance for cards/items laid out in a v-row grid */
+.v-row > .v-col:nth-child(1) .reveal { transition-delay: 0ms; }
+.v-row > .v-col:nth-child(2) .reveal { transition-delay: 80ms; }
+.v-row > .v-col:nth-child(3) .reveal { transition-delay: 160ms; }
+.v-row > .v-col:nth-child(4) .reveal { transition-delay: 240ms; }
+.v-row > .v-col:nth-child(5) .reveal { transition-delay: 320ms; }
+.v-row > .v-col:nth-child(6) .reveal { transition-delay: 400ms; }
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: rgb(var(--v-theme-teal));
+  z-index: 3000;
+  transition: width 0.1s ease-out;
+}
