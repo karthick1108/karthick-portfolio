@@ -4,6 +4,8 @@ export interface Education {
   location: string
   years: string
   icon: string
+  verifiedBy?: string
+  verifiedLink?: string
 }
 
 export const education: Education[] = [
@@ -13,6 +15,8 @@ export const education: Education[] = [
     location: 'Melbourne, Australia',
     years: '2018 – 2020',
     icon: '🎓',
+    verifiedBy: 'World Education Services (WES)',
+    verifiedLink: 'https://www.credly.com/earner/earned/badge/ced1f68a-d51c-46c2-be1f-dcce1f9951c8',
   },
   {
     degree: 'Bachelors in Computer Science and Engineering',
