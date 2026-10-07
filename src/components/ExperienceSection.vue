@@ -3,14 +3,14 @@
     <v-container style="max-width: 900px">
       <h2 v-reveal class="text-h4 font-weight-bold mb-6">Work history</h2>
 
-      <v-timeline v-reveal align="start">
+      <v-timeline v-reveal align="start" :side="mobile ? 'end' : undefined">
         <v-timeline-item
           v-for="job in experience"
           :key="job.company"
           :dot-color="job.color"
           size="small"
         >
-          <template v-slot:opposite>
+          <template v-if="!mobile" v-slot:opposite>
             <div class="font-weight-bold" :style="`color: ${job.color}`">
               {{ job.period }}
             </div>
@@ -20,6 +20,14 @@
           </template>
 
           <div class="pb-6 experience-item pa-3 rounded-lg">
+            <div v-if="mobile" class="mb-2">
+              <div class="font-weight-bold" :style="`color: ${job.color}`">
+                {{ job.period }}
+              </div>
+              <div class="text-caption text-medium-emphasis">
+                {{ job.location }}
+              </div>
+            </div>
             <div class="d-flex align-center ga-2 mb-1">
               <span class="text-h6 font-weight-bold">{{ job.role }}</span>
             </div>
@@ -48,6 +56,9 @@
 
 <script setup lang="ts">
 import { experience } from '@/data/experience'
+import { useDisplay } from 'vuetify'
+
+const { mobile } = useDisplay()
 </script>
 
 <style scoped>
