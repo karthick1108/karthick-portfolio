@@ -54,9 +54,17 @@ import { education } from '@/data/education'
 }
 
 .degree-title span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+  .degree-title span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+  }
 }
 
 .verified-tick {
